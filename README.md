@@ -18,12 +18,10 @@ ADDRESS_INDEX=0
 ## Running the app
 
 ```bash
-# development
-$ npm run start
+# deployer contracts
+$ truffle deploy --network (name blockchain network)
 
-# watch mode
-$ npm run start:dev
+# check contracts
+$ truffle run verify (name of contracts) --network (name blockchain network)
 
-# production mode
-$ npm run start:prod
 ```
