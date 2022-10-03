@@ -1,8 +1,10 @@
+require('dotenv').config()
+
 module.exports = {
     etherscan: '', // Ethereum
     optimistic_etherscan: '', // Optimisc
     arbiscan: '', // Arbitrum
-    bscscan: '', // Binance Smart Chain
+    bscscan: process.env.BSC_API, // Binance Smart Chain
     snowtrace: '', // Avalanche
     polygonscan: '', // Polygon
     ftmscan: '', // Fantom

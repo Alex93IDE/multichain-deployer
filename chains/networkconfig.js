@@ -11,6 +11,7 @@ module.exports = (
 ) => {
     return {
         network_id,
+        networkCheckTimeout: 30000,
         provider: () => new HDWalletProvider(
             mnemonics,
             url,
